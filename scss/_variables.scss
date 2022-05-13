@@ -1,0 +1,48 @@
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+// ================= Variables ====================
+
+@mixin font($fw: 400, $fs: 1rem, $fc: #ee9b00, $deco: none) {
+  font-weight: $fw;
+  font-size: $fs;
+  color: $fc;
+  text-decoration: $deco;
+}
+
+// $fw: 100, (0, 200), (0, 300), (0, 400), (0, 500), (0, 600), (0, 700), (0, 800),
+//   (0, 900), (1, 300), (1, 400), (1, 500), (1, 600), (1, 700), (1, 800), (1, 900);
+// $fs: 2rem, 4rem, 8rem, 12rem;
+// $fw: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+// $alt-font: Arial, sans-serif;
+
+$colors: #222222, #ee9b00, #c1c1c1, #ee534f;
+
+// #f8f9fa, #0b090a,
+
+$base-font: "Oswald", sans-serif;
+// $base-font: "Playfair Display", serif;
+// $base-font: "Noto Serif Display", serif;
+
+$lh: 2em, 4em, 8em;
+$pm: 1em, 2em, 4em;
+
+// ==================== Animation ===============
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
